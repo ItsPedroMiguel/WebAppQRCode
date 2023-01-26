@@ -6,7 +6,7 @@ from PIL import Image
 
 def criar_qrcode():
     if codigo == "":
-        st.error("Código Inválido", icon="🚨")
+        st.error("Introduz o Código e Press ENTER", icon="🚨")
         pass
     else:
         img_qrcode = qrcode.make(codigo)
