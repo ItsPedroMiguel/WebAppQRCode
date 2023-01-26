@@ -6,12 +6,13 @@ from PIL import Image
 
 def criar_qrcode():
     if codigo == "":
-        st.error("Código Inválido")
+        st.error("Código Inválido", icon="🚨")
         pass
     else:
         img_qrcode = qrcode.make(codigo)
         img_qrcode.save("qrcode.png")
         img_qrcode_final = st.image("qrcode.png", width=300)
+        st.success("Código Criado", icon="✅")
 
 logo = st.image("logo_mcdonalds.png", width=100)
 titulo = st.title('QRCode 4 Pickup')
