@@ -15,5 +15,6 @@ def criar_qrcode():
 
 logo = st.image("logo_mcdonalds.png", width=100)
 titulo = st.title('QRCode 4 Pickup')
-codigo = st.text_input("", max_chars=5, placeholder=("Introduz o Código do Pedido"))
+codigo = st.text_input("", max_chars=5, placeholder=("Introduz o Código e Press ENTER"))
 btn_criar = st.button("Criar QRCode", on_click=criar_qrcode)
+marca = st.caption('Copyright © 2023 Its Pedro Miguel')
