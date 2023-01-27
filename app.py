@@ -20,4 +20,4 @@ codigo = st.text_input("", max_chars=5, placeholder=("Introduz o Código e Press
 btn_criar = st.button("Criar QRCode", on_click=criar_qrcode)
 instrucoestitulo = st.title("Instruções")
 instrucoes = st.header("Intruduzir o código do pedido e em seguida carregar na tecla ENTER do teclado de forma ao programa assumir o código e logo de seguida carregar no botão Criar Código")
-marca = st.caption('Copyright © 2023 Its Pedro Miguel')
+marca = st.caption('WebApp Created by Its Pedro Miguel © 2023')
